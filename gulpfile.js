@@ -43,7 +43,11 @@ gulp.task('build', (cb) => {
     cb(err)
   })
 })
-
+gulp.task('deploy', (cb) => {
+  exec('git subtree push --prefix build origin gh-pages', (err) => {
+    cb(err)
+  })
+})
 gulp.task('watch', ['browsersync'], () => {
   gulp.watch(paths.src, ['build'])
   gulp.watch(paths.scss, ['sass'])
