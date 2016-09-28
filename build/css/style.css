@@ -1,5 +1,101 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 body {
   font-family: 'Raleway', sans-serif;
-  padding: 16px;
   margin: 0; }
+
+/**
+ * Custom CSS
+ */
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2.0rem; }
+
+h3 {
+  font-size: 1.8rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+img {
+  max-width: 98%; }
+
+/**
+ * 記事ページのタイトル部分
+ */
+.post-header {
+  margin: 48px 0;
+  padding: 64px;
+  text-align: center; }
+  .post-header h1 {
+    font-weight: 200;
+    color: #333; }
+  .post-header p {
+    color: #666; }
+  .post-header time {
+    font-size: 1.2rem;
+    color: #ccc; }
+
+#big-thumb {
+  width: 100%;
+  height: 700px; }
+
+#projects-container {
+  margin-top: 48px; }
+  #projects-container .content {
+    text-align: center; }
+
+/**
+ * トップページのスローガン部分
+ */
+#main-slogan-area {
+  padding: 10rem 0;
+  text-align: center; }
+  #main-slogan-area h2 {
+    color: #333;
+    font-size: 3.0rem; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #eee;
+  line-height: 64px;
+  height: 64px;
+  vertical-align: middle;
+  text-align: right;
+  background: #fff;
+  z-index: 10; }
+  header .logo {
+    position: absolute;
+    top: 17px;
+    left: 0; }
+  header .menu a {
+    margin: 0 8px;
+    text-decoration: none; }
+
+/**
+ * トップページのグリッドサムネイル
+ */
+.top-thumbs:after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.top-thumbs .item {
+  border: 1px solid #ddd;
+  padding: 4px; }
+  .top-thumbs .item .thumb {
+    content: '';
+    width: 100%;
+    height: 180px; }
+
+footer {
+  text-align: center; }

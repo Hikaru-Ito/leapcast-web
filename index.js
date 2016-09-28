@@ -8,7 +8,7 @@ Metalsmith(__dirname)
     title: "Leapcast",
     description: "DesignEngineering Studio",
     generator: "Metalsmith",
-    url: "https://leapcast.jp/"
+    url: "http://leapcast.jp/"
   })
   .source('./src')
   .destination('./build')

@@ -15,7 +15,7 @@ const exec = require('child_process').exec
 const paths = {
   scss: './style/**.scss',
   cssDir: './build/css',
-  src: './src/**/*'
+  src: ['./src/**/*', './layouts/**/*']
 }
 
 /**
