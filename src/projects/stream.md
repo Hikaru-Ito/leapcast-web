@@ -1,12 +1,26 @@
 ---
 layout: post.html
 title: Stream
-subtitle: セレンディピティを誘発するニュースアプリケーション
+subtitle: オンライン機械学習を使用したコンテンツブラウジングインターフェース
 date: 2016-10-01
-image: http://www.macotakara.jp/blog/archives/001/201607/57882b3721fdf.jpg
+tags:
+  - オンライン機械学習
+  - 人工知能
+  - インターフェース
+  - iOS
 ---
 
-## test title paragraph
+![ss](https://i.gyazo.com/cd1116a9cb2e60500d7c1cca22413d52.png)
 
-- hoge
-- fuga
+
+オンメモリでリアルタイムに計算処理をするオンライン機械学習技術を使用したモバイル向けのコンテンツブラウジングインターフェースです
+
+ユーザーが生成した直近のコンテキストをもとに、リアルタイムに推薦するコンテンツを計算しています。たとえば、10秒前にアクセスしたWebページの情報をもとに、推薦記事を絞り込み、スワイプ先のコンテンツにすることができます。
+
+
+[Client Application(Github)](https://github.com/Hikaru-Ito/Stream)
+
+
+### 開発時期
+
+2015年11月

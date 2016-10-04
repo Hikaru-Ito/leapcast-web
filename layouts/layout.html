@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ title }}</title>
+  <title>{{ title }} - {{ description }}</title>
   <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
@@ -12,12 +12,12 @@
 <body>
   <header>
     <div class="container">
-      <img class="logo" src="https://gyazo.com/bb7a116f0ad12244843ae086507be2e1.png" width="auto" height="30px">
+      <a href="/"><img class="logo" src="https://gyazo.com/bb7a116f0ad12244843ae086507be2e1.png" width="auto" height="30px"></a>
       <div class="menu">
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/works">Works</a>
-        <a href="/project">Project</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   </header>
@@ -28,31 +28,16 @@
       <h2>Designing * Engineering</h2>
     </div>
 
-    <a href="/projects/test">test</a>
     <div class="top-thumbs">
-      <div class="row">
-        <div class="item six columns">
-          <div class="thumb" style="background:url(https://gyazo.com/7e238362ae678a3b982b6ca9bb0b4687.png) center center;background-size:cover;"></div>
-
-        </div>
-        <div class="item six columns">
-          <div class="thumb" style="background:url(https://gyazo.com/7e238362ae678a3b982b6ca9bb0b4687.png) center center;background-size:cover;"></div>
-        </div>
+      <div class="full-thumb">
+        <a href="/projects/wonder"><img src="https://gyazo.com/4d0e773498f7ed95d94bc58a2284c277.png"></a>
       </div>
-      <div class="row">
-        <div class="six columns">3</div>
-        <div class="six columns">4</div>
-      </div>
-      <div class="row">
-        <div class="six columns">5</div>
-        <div class="six columns">6</div>
-      </div>
-
     </div>
+
   </main>
 
   <footer>
-    <p><a href="{{ url }}">Leapcast</a></p>
+    <p>Designed by <a href="/hikaru">🌟</a></p>
   </footer>
 
 </body>

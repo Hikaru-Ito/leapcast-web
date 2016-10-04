@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ title }}</title>
+  <title>{{ title }} - {{ sitename   }}</title>
   <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
@@ -11,30 +11,44 @@
 <body>
   <header>
     <div class="container">
-      <img class="logo" src="https://gyazo.com/bb7a116f0ad12244843ae086507be2e1.png" width="auto" height="30px">
+      <a href="/"><img class="logo" src="https://gyazo.com/bb7a116f0ad12244843ae086507be2e1.png" width="auto" height="30px"></a>
       <div class="menu">
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/works">Works</a>
-        <a href="/project">Project</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   </header>
 
-  <div id="big-thumb" style="background:url({{ image }}) center center;background-size:cover;"></div>
+  <main id="projects-container">
 
-  <main id="projects-container" class="container">
-    <div class="post-header">
+    <div class="post-header container">
       <h1>{{ title }}</h1>
       <p>{{ subtitle }}</p>
+      {{#if tags}}
+      <div class="tags">
+      {{#each tags}}
+        <span>{{ this }}</span>
+      {{/each}}
+      </div>
+      {{/if}}
+    </div>
+
+    {{#if thumb}}
+    <div id="big-thumb" style="background:url({{ thumb }}) center center;background-size:cover;"></div>
+    {{/if}}
+
+    <div class="post-content container">
+      {{{ contents }}}
       <time>{{ date }}</time>
     </div>
-    <div class="content">
-      {{{ contents }}}
-    </div>
+
   </main>
 
-  <footer class="container">
+  <footer>
+    <p>Designed by <a href="/hikaru">🌟</a></p>
   </footer>
+
 </body>
 </html>

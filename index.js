@@ -6,6 +6,7 @@ var permalinks  = require('metalsmith-permalinks')
 Metalsmith(__dirname)
   .metadata({
     title: "Leapcast",
+    sitename: "Leapcast",
     description: "DesignEngineering Studio",
     generator: "Metalsmith",
     url: "http://leapcast.jp/"
