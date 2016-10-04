@@ -1,21 +1,26 @@
 @charset "UTF-8";
+/**
+ * Web Fonts
+ */
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/**
+ * Custom CSS
+ */
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0; }
 
-/**
- * Custom CSS
- */
 h1 {
-  font-size: 2.4rem; }
+  font-size: 2.3rem; }
 
 h2 {
-  font-size: 2.0rem; }
+  font-size: 2.0rem;
+  margin-bottom: 32px; }
 
 h3 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  margin-bottom: 32px; }
 
 h4 {
   font-size: 1.4rem; }
@@ -26,36 +31,57 @@ h5 {
 img {
   max-width: 98%; }
 
+time {
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+  margin: 16px 0; }
+
 /**
  * 記事ページのタイトル部分
  */
-.post-header {
-  margin: 48px 0;
-  padding: 64px;
-  text-align: center; }
-  .post-header h1 {
-    font-weight: 200;
-    color: #333; }
-  .post-header p {
-    color: #666; }
-  .post-header time {
-    font-size: 1.2rem;
-    color: #ccc; }
-
-#big-thumb {
-  width: 100%;
-  height: 700px; }
-
 #projects-container {
-  margin-top: 48px; }
-  #projects-container .content {
-    text-align: center; }
+  padding-top: 64px; }
+  #projects-container .post-header {
+    margin-top: 64px; }
+    #projects-container .post-header h1 {
+      font-weight: 400;
+      color: #333; }
+    #projects-container .post-header p {
+      color: #666; }
+    #projects-container .post-header time {
+      font-size: 1.2rem;
+      color: #ccc; }
+    #projects-container .post-header .tags span:first-child {
+      margin: 0 4px 0 0; }
+    #projects-container .post-header .tags span {
+      font-family: 'Noto Sans Japanese';
+      font-size: 1.2rem;
+      color: #666;
+      margin: 0 2px;
+      line-height: 30px;
+      border-radius: 2px;
+      white-space: nowrap; }
+  #projects-container .post-content {
+    font-family: 'Noto Sans Japanese';
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #333;
+    text-align: left;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+  #projects-container #big-thumb {
+    content: '';
+    width: 100%;
+    height: 350px;
+    margin: 64px 0; }
 
 /**
  * トップページのスローガン部分
  */
 #main-slogan-area {
-  padding: 10rem 0;
+  margin-top: 64px;
+  padding: 14rem 0;
   text-align: center; }
   #main-slogan-area h2 {
     color: #333;
@@ -84,6 +110,11 @@ header {
 /**
  * トップページのグリッドサムネイル
  */
+.top-thumbs .full-thumb {
+  padding: 4px;
+  max-width: 640px;
+  margin: 0 auto; }
+
 .top-thumbs:after {
   display: block;
   content: '';
@@ -91,11 +122,84 @@ header {
 
 .top-thumbs .item {
   border: 1px solid #ddd;
-  padding: 4px; }
+  padding: 4px;
+  margin: 4px; }
   .top-thumbs .item .thumb {
     content: '';
     width: 100%;
-    height: 180px; }
+    height: 240px; }
+
+/**
+ *  プロフィール
+ */
+#profile h5 {
+  font-weight: bold;
+  font-size: 1.4rem; }
+
+#profile h6 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0; }
+
+#profile p {
+  margin: 4px 0;
+  padding: 0;
+  font-size: 1.2rem; }
+
+#profile .section {
+  margin-bottom: 24px; }
+
+@media (max-width: 550px) {
+  #profile .row {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd; } }
+
+/**
+ * Projects Top Page
+ */
+#projects .section {
+  margin-bottom: 36px; }
+  #projects .section h6 {
+    margin: 6px 0;
+    padding: 0; }
+  #projects .section p {
+    margin: 4px 0;
+    padding: 0; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  padding: 128px 0 64px 0; }
+  footer a {
+    text-decoration: none; }
+
+@media (max-width: 550px) {
+  #projects-container {
+    padding-top: 0; }
+  #main-slogan-area {
+    margin-top: 24px;
+    padding: 8rem 0;
+    text-align: center; }
+    #main-slogan-area h2 {
+      color: #333;
+      font-size: 3.0rem; }
+  header {
+    position: relative;
+    border-bottom: 0px solid #eee;
+    background: #fff;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 24px 0;
+    padding-top: 64px; }
+    header .logo {
+      display: block;
+      margin: 8px auto;
+      position: relative;
+      top: 0;
+      left: 0; }
+    header .menu {
+      text-align: center; }
+      header .menu a {
+        margin: 0 8px;
+        text-decoration: none; } }
